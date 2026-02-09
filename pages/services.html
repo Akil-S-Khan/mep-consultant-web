@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | MEP Groups Consultant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Service Section Styling */
+        .service-box {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+            margin-bottom: 50px;
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon-large {
+            font-size: 4rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+
+        /* Call to Action */
+        .cta-bar {
+            background: var(--accent);
+            color: white;
+            padding: 40px 0;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logoMEP.jpeg" alt="Logo" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link mx-2" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2 " href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="services-header hero">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Innovative MEP Design & Sustainable Engineering
+            </h1>
+            <p class="lead">Delivering precision-driven Mechanical, Electrical, and Plumbing solutions tailored for
+                complex infrastructure and
+                modern developments.</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container py-5">
+
+            <div class="row align-items-center service-box g-0" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <img src="../images/img_10.jpeg" class="img-fluid w-100" alt="Mechanical HVAC"
+                        style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 p-5">
+                    <i class="fas fa-snowflake service-icon-large"></i>
+                    <h2 class="mb-3">Mechanical (HVAC) Engineering</h2>
+                    <p>Our HVAC solutions are engineered to optimize thermal comfort and indoor air quality while
+                        significantly reducing energy
+                        consumption. We provide end-to-end design services that ensure your building’s climate control
+                        systems are efficient,
+                        reliable, and compliant with international standards.</p>
+                    <ul class="feature-list">
+                        <li><b>Precision Heat Load Calculations:</b> Ensuring optimal equipment sizing for efficiency.
+                        </li>
+                        <li><b>Advanced Duct Layout & Sizing:</b> Designed for balanced airflow and minimal noise.</li>
+                        <li><b>Chilled Water Pipe Sizing & Design:</b> High-performance cooling network architecture.
+                        </li>
+                        <li><b>Ventilation & Exhaust Systems:</b> Specialized solutions for fresh air intake and
+                            industrial
+                            exhaust.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center service-box g-0 flex-lg-row-reverse" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <img src="../images/img_12.jpeg" class="img-fluid w-100" alt="Electrical Systems"
+                        style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 p-5">
+                    <i class="fas fa-bolt service-icon-large"></i>
+                    <h2 class="mb-3">Electrical & Power Engineering</h2>
+                    <p>We design robust and scalable electrical systems focused on safety, efficiency, and uninterrupted
+                        power distribution.
+                        Our designs adhere to the latest electrical codes to ensure long-term reliability for
+                        residential and commercial
+                        infrastructures.</p>
+                    <ul class="feature-list">
+                        <li><b>Comprehensive Lighting & Power Layouts:</b> Optimized for energy saving and
+                            functionality.</li>
+                        <li><b>Detailed Single Line Diagrams (SLD):</b> Clear architecture for complex power
+                            distribution.</li>
+                        <li><b>Precise Cable Sizing & Scheduling:</b> Preventing voltage drops and ensuring safety.</li>
+                        <li><b>Earthing & Lightning Protection:</b> Advanced safety systems to protect equipment and
+                            life.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center service-box g-0" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <img src="../images/img_11.jpeg" class="img-fluid w-100" alt="Plumbing Fire"
+                        style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 p-5">
+                    <i class="fas fa-faucet-drip service-icon-large"></i>
+                    <h2 class="mb-3">Public Health Engineering (Plumbing) & Fire Safety</h2>
+                    <p>Our engineering approach integrates sustainable water management with life-saving fire protection
+                        systems. We develop
+                        sophisticated hydraulic models that ensure efficient water supply, drainage, and rapid-response
+                        fire suppression.</p>
+                    <ul class="feature-list">
+                        <li><b>Water Supply & Drainage Layouts:</b> Designed for optimal pressure and hygiene.</li>
+                        <li><b>Specialized Septic Tank & STP Design:</b> Environmentally conscious waste management.
+                        </li>
+                        <li><b>Fire Sprinkler & Hydrant Systems:</b> Fully compliant with NFPA and local safety
+                            standards.</li>
+                        <li><b>Advanced Fire Alarm & Detection:</b> High-sensitivity systems for early risk mitigation.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 bg-secondary text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6">What You Receive (Deliverables)</h2>
+                <p class="text-accent" style="color: var(--accent);">Complete Documentation for Seamless Construction
+                </p>
+            </div>
+
+            <div class="row g-4 d-flex align-items-stretch">
+
+                <div class="col-md-3 text-center" data-aos="zoom-in">
+                    <div class="p-4 border border-light rounded h-100 d-flex flex-column justify-content-center">
+                        <i class="fas fa-file-pdf mb-3" style="font-size: 2rem;"></i>
+                        <h6 class="mb-0">Detailed Blueprints: Precision 2D CAD drawings for on-site execution.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="p-4 border border-light rounded h-100 d-flex flex-column justify-content-center">
+                        <i class="fas fa-cubes mb-3" style="font-size: 2rem;"></i>
+                        <h6 class="mb-0">BIM Coordinated Models: 3D clash-detection models to prevent on-site rework.
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="p-4 border border-light rounded h-100 d-flex flex-column justify-content-center">
+                        <i class="fas fa-calculator mb-3" style="font-size: 2rem;"></i>
+                        <h6 class="mb-0">Material Take-offs (BOQ): Accurate quantity estimation for budget control.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="p-4 border border-light rounded h-100 d-flex flex-column justify-content-center">
+                        <i class="fas fa-clipboard-check mb-3" style="font-size: 2rem;"></i>
+                        <h6 class="mb-0">Compliance Reports: Technical documentation ensuring all designs meet
+                            government
+                            standards.</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- ABOUT COMPANY -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="../images/logoMEP.jpeg" alt="MEP Groups Consultant Logo" height="70"
+                        class="mb-4 bg-white p-2 rounded">
+
+                    <p class="small text-light-50">
+                        Precision in Design, Excellence in Delivery. <br>
+                        MEP Groups Consultant delivers reliable, sustainable and
+                        code-compliant Mechanical, Electrical & Plumbing engineering
+                        solutions across residential, commercial and institutional projects.
+                    </p>
+
+                    <p class="small mt-3 text-light-50">
+                        <strong>Standards:</strong> IS | NBC | ASHRAE | NFPA
+                    </p>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./pages/about.html">About Us</a></li>
+                        <li><a href="./pages/services.html">Services</a></li>
+                        <li><a href="./pages/projects.html">Projects</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- SERVICES SNAPSHOT -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li>HVAC Design & Engineering</li>
+                        <li>Electrical Systems Design</li>
+                        <li>Plumbing & Fire Fighting</li>
+                        <li>MEP Drafting & BIM</li>
+                        <li>Energy Efficient Solutions</li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p class="small mb-2">
+                        <i class="fas fa-map-marker-alt me-2 text-accent"></i>
+                        Mumbai, India
+                    </p>
+                    <p class="small mb-2">
+                        <i class="fas fa-phone-alt me-2 text-accent"></i>
+                        +91 91370 54148
+                    </p>
+                    <p class="small">
+                        <i class="fas fa-envelope me-2 text-accent"></i>
+                        mepgroupsconsultant@gmail.com
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="mt-5 border-secondary">
+
+            <p class="text-center small mb-0 text-light-50">
+                © 2024 MEP Groups Consultant. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919137054148" class="whatsapp-float animate__animated animate__bounceInUp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="backToTop" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script src="../css/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

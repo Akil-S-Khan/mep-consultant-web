@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | MEP Groups Consultant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* Project Card */
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: 0.4s;
+            height: 100%;
+            border: none;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-img-container {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .project-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .project-card:hover img {
+            scale: 1.1;
+        }
+
+        .project-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .project-info {
+            padding: 25px;
+        }
+
+        .project-location {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Stats Section */
+        .stats-bar {
+            background: var(--primary);
+            color: white;
+            padding: 60px 0;
+        }
+
+        /* Filter Tabs (Optional UI) */
+        .nav-pills .nav-link.active {
+            background-color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logoMEP.jpeg" alt="Logo" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link mx-2" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2 " href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="projects-header hero">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Our Portfolio</h1>
+            <p class="lead">Delivering Engineering Excellence Across 1000+ Landmark Projects Globally.</p>
+        </div>
+    </header>
+
+    <section class="stats-bar text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="display-4 fw-bold">1000+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="display-4 fw-bold">15+</h2>
+                    <p>Years of Industry Experience</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="display-4 fw-bold">5+</h2>
+                    <p>Countries Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="text-muted">Our Featured Projects: Redefining Infrastructure Standards.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Resort</span>
+                            <img src="../images/img_11.jpeg" alt="Jannat Resort">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Lonavala / Igatpuri</p>
+                            <h5>Tha Jannat Resort</h5>
+                            <p class="small text-muted">Complete MEP design and high-end plumbing consultancy for luxury
+                                farm stays and eco-resorts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Retail</span>
+                            <img src="../images/img_10.jpeg" alt="Reliance Digital">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Multiple Locations</p>
+                            <h5>Reliance Digital & Trends</h5>
+                            <p class="small text-muted">Comprehensive HVAC and Electrical layout designs for pan-India
+                                retail outlets, ensuring energy efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Residential</span>
+                            <img src="../images/img_11.jpeg" alt="Saudi Project">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Saudi Arabia</p>
+                            <h5>Alsukhait Al Khoba Apartments</h5>
+                            <p class="small text-muted">International standard MEP drafting and BIM coordination for
+                                premium luxury residential units.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Corporate</span>
+                            <img src="../images/img_12.jpeg" alt="HDFC Bank">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Vikhroli, Mumbai</p>
+                            <h5>HDFC Bank Office</h5>
+                            <p class="small text-muted">High-efficiency electrical systems and advanced fire protection
+                                design for corporate banking environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Industrial</span>
+                            <img src="../images/img_12.jpeg" alt="Oriental Container">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Orissa</p>
+                            <h5>Oriental Container Plant</h5>
+                            <p class="small text-muted">Specialized industrial-grade mechanical ventilation and
+                                heavy-duty system engineering.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Commercial</span>
+                            <img src="../images/img_9.jpeg" alt="KA Mall">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Jabalpur</p>
+                            <h5>KA Mall</h5>
+                            <p class="small text-muted">End-to-end MEP coordination using advanced BIM technology for
+                                large-scale commercial spaces.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 p-5 bg-white rounded-4 shadow-sm" data-aos="fade-up">
+                <h4 class="mb-4 text-primary">Notable Mentions:</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">R3 & R4 Rehab Apartments, Matunga</li>
+                            <li class="list-group-item">Admin Building Office Area, Pune</li>
+                            <li class="list-group-item">The Barn Resort, Lonavala</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">TG & DRI Building, Chandrapur</li>
+                            <li class="list-group-item">Chikaldara Resort Project</li>
+                            <li class="list-group-item">Corporate Offices across India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- ABOUT COMPANY -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="../images/logoMEP.jpeg" alt="MEP Groups Consultant Logo" height="70"
+                        class="mb-4 bg-white p-2 rounded">
+
+                    <p class="small text-light-50">
+                        Precision in Design, Excellence in Delivery. <br>
+                        MEP Groups Consultant delivers reliable, sustainable and
+                        code-compliant Mechanical, Electrical & Plumbing engineering
+                        solutions across residential, commercial and institutional projects.
+                    </p>
+
+                    <p class="small mt-3 text-light-50">
+                        <strong>Standards:</strong> IS | NBC | ASHRAE | NFPA
+                    </p>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./pages/about.html">About Us</a></li>
+                        <li><a href="./pages/services.html">Services</a></li>
+                        <li><a href="./pages/projects.html">Projects</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- SERVICES SNAPSHOT -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li>HVAC Design & Engineering</li>
+                        <li>Electrical Systems Design</li>
+                        <li>Plumbing & Fire Fighting</li>
+                        <li>MEP Drafting & BIM</li>
+                        <li>Energy Efficient Solutions</li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p class="small mb-2">
+                        <i class="fas fa-map-marker-alt me-2 text-accent"></i>
+                        Mumbai, India
+                    </p>
+                    <p class="small mb-2">
+                        <i class="fas fa-phone-alt me-2 text-accent"></i>
+                        +91 91370 54148
+                    </p>
+                    <p class="small">
+                        <i class="fas fa-envelope me-2 text-accent"></i>
+                        mepgroupsconsultant@gmail.com
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="mt-5 border-secondary">
+
+            <p class="text-center small mb-0 text-light-50">
+                © 2024 MEP Groups Consultant. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919137054148" class="whatsapp-float animate__animated animate__bounceInUp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="backToTop" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script src="../css/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
