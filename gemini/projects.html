@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | MEP Groups Consultant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #002d5b;
+            --secondary: #001a35;
+            --accent: #c5a059;
+            --white: #ffffff;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #444;
+            background-color: #f4f7f9;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Header */
+        .projects-header {
+            padding: 100px 0;
+            background: linear-gradient(rgba(0, 45, 91, 0.9), rgba(0, 45, 91, 0.9)), url('../images/img_1.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Project Card */
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: 0.4s;
+            height: 100%;
+            border: none;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-img-container {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .project-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .project-card:hover img {
+            scale: 1.1;
+        }
+
+        .project-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .project-info {
+            padding: 25px;
+        }
+
+        .project-location {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Stats Section */
+        .stats-bar {
+            background: var(--primary);
+            color: white;
+            padding: 60px 0;
+        }
+
+        /* Filter Tabs (Optional UI) */
+        .nav-pills .nav-link.active {
+            background-color: var(--accent);
+        }
+
+        .nav-link {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            z-index: 100;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="../images/logoMEP.jpeg" alt="Logo" height="60"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link mx-2" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2 fw-bold text-accent"
+                            style="color:var(--accent)!important" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="projects-header">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Our Portfolio</h1>
+            <p class="lead">Delivering Excellence Across 1000+ Projects Globally</p>
+        </div>
+    </header>
+
+    <section class="stats-bar text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="display-4 fw-bold">1000+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="display-4 fw-bold">15+</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="display-4 fw-bold">5+</h2>
+                    <p>Countries Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="text-muted">Hamare kuch behtareen kaam jo excellence ko darshate hain.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Resort</span>
+                            <img src="../images/img_39.jpeg" alt="Jannat Resort">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Lonavala / Igatpuri</p>
+                            <h5>Tha Jannat Resort</h5>
+                            <p class="small text-muted">Complete MEP design and plumbing consultancy for luxury farm
+                                stays.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Retail</span>
+                            <img src="../images/img_43.jpeg" alt="Reliance Digital">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Multiple Locations</p>
+                            <h5>Reliance Digital & Trends</h5>
+                            <p class="small text-muted">HVAC and Electrical layout designs for pan-India retail outlets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Residential</span>
+                            <img src="../images/img_1.jpeg" alt="Saudi Project">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Saudi Arabia</p>
+                            <h5>Alsukhait Al Khoba Apartments</h5>
+                            <p class="small text-muted">International standards compliant MEP drafting for luxury
+                                residential units.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Corporate</span>
+                            <img src="../images/img_12.jpeg" alt="HDFC Bank">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Vikhroli, Mumbai</p>
+                            <h5>HDFC Bank Office</h5>
+                            <p class="small text-muted">High-efficiency electrical and fire protection systems design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Industrial</span>
+                            <img src="../images/img_32.jpeg" alt="Oriental Container">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Orissa</p>
+                            <h5>Oriental Container Plant</h5>
+                            <p class="small text-muted">Industrial-grade mechanical and ventilation system engineering.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <span class="project-category">Commercial</span>
+                            <img src="../images/img_31.jpeg" alt="KA Mall">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-location">Jabalpur</p>
+                            <h5>KA Mall</h5>
+                            <p class="small text-muted">Comprehensive MEP coordination using advanced BIM technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 p-5 bg-white rounded-4 shadow-sm" data-aos="fade-up">
+                <h4 class="mb-4 text-primary">Notable Mentions:</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">R3 & R4 Rehab Apartments, Matunga</li>
+                            <li class="list-group-item">Admin Building Office Area, Pune</li>
+                            <li class="list-group-item">The Barn Resort, Lonavala</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">TG & DRI Building, Chandrapur</li>
+                            <li class="list-group-item">Chikaldara Resort Project</li>
+                            <li class="list-group-item">Corporate Offices across India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <img src="../images/logoMEP.jpeg" alt="Logo" height="50" class="mb-4 bg-white p-2 rounded">
+                    <p class="small text-light-50">Precision in Design, Excellence in Delivery. MEP Groups Consultant
+                        delivers world-class engineering solutions.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt me-2 text-accent"></i> Mumbai, India</p>
+                    <p class="small mb-1"><i class="fas fa-phone-alt me-2 text-accent"></i> +91 91370 54148</p>
+                    <p class="small"><i class="fas fa-envelope me-2 text-accent"></i> mepgroupsconsultant@gmail.com</p>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <p class="text-center small mb-0">&copy; 2024 MEP Groups Consultant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        /* Footer Styling */
+        .footer-section {
+            background: var(--secondary);
+            color: #fff;
+            padding: 100px 0 30px;
+            margin-top: 100px;
+        }
+
+        .footer-title {
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 40px;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 10px;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid var(--accent);
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            transform: rotate(360deg);
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #25d366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        /* Back to Top */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background: var(--accent);
+            color: white;
+            cursor: pointer;
+            width: 45px;
+            height: 45px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        #backToTop:hover {
+            background: var(--primary);
+        }
+
+        .text-light-50 {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .text-accent {
+            color: var(--accent);
+        }
+    </style>
+    <a href="https://wa.me/919137054148" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+
+</html>

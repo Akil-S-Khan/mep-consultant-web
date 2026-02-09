@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MEP Groups Consultant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        :root {
+            --primary: #002d5b;
+            --secondary: #001a35;
+            --accent: #c5a059;
+            --white: #ffffff;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #444;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Navigation */
+        .navbar {
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .nav-link {
+            color: var(--primary) !important;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Inner Page Header */
+        .page-header {
+            height: 50vh;
+            background: linear-gradient(rgba(0, 26, 53, 0.8), rgba(0, 26, 53, 0.8)), url('../images/img_8.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+        }
+
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Mission Vision Cards */
+        .mv-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            height: 100%;
+            border-bottom: 5px solid transparent;
+        }
+
+        .mv-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 5px solid var(--accent);
+        }
+
+        .mv-card i {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        /* Process Steps */
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .step-num {
+            background: var(--accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+
+        /* Utility */
+        .btn-premium {
+            background: var(--accent);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            font-weight: 600;
+            border: none;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-premium:hover {
+            background: var(--primary);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .footer-section {
+            background: var(--secondary);
+            color: #fff;
+            padding: 80px 0 30px;
+        }
+
+        .footer-title {
+            color: var(--accent);
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/logoMEP.jpeg" alt="Logo" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link mx-2" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2 fw-bold text-accent"
+                            style="color:var(--accent)!important" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-3 animate__animated animate__fadeInDown">About Our Excellence</h1>
+            <p class="lead animate__animated animate__fadeInUp">Crafting the Future of Engineering Solutions</p>
+            <p class="mt-3 small text-light-50">
+                Delivering Mechanical, Electrical & Plumbing excellence across residential,
+                commercial and industrial developments.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-5 mt-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <h6 class="text-uppercase fw-bold" style="color: var(--accent); letter-spacing: 2px;">Company
+                        Overview</h6>
+                    <h2 class="section-title display-5">Innovative MEP Design & Drafting Solutions</h2>
+                    <p class="text-muted lead">At MEP Groups Consultant, we believe that exceptional buildings are
+                        powered by intelligent engineering systems.</p>
+                    <p>We specialize in delivering end-to-end Mechanical, Electrical and Plumbing (MEP) design and
+                        drafting solutions that are
+                        practical, sustainable and future-ready. Our expertise lies in transforming complex engineering
+                        requirements into
+                        efficient, cost-effective and code-compliant designs.
+
+                        Leveraging advanced CAD & BIM technologies, our team ensures precise coordination, accurate
+                        documentation and seamless
+                        execution across residential, commercial and industrial developments.</p>
+                    <p>With projects delivered across India and international markets, we focus not just on design
+                        excellence, but on
+                        reliability, safety and long-term performance of every system we engineer.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-2">✔ Code-compliant & globally aligned designs</li>
+                        <li class="mb-2">✔ Optimized for energy efficiency & sustainability</li>
+                        <li class="mb-2">✔ Engineered for safety, reliability & scalability</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 px-lg-5" data-aos="zoom-in">
+                    <div class="position-relative">
+                        <img src="../images/img_14.jpeg" class="img-fluid rounded-4 shadow-lg" alt="About Image">
+                        <div
+                            style="position: absolute; top: -20px; left: -20px; width: 100px; height: 100px; border: 10px solid var(--accent); z-index: -1; border-radius: 10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="mv-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Our Mission</h3>
+                        <p class="text-muted">To engineer intelligent MEP solutions that enhance building performance,
+                            reduce operational costs and ensure safety,
+                            sustainability and long-term value.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mv-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Our Vision</h3>
+                        <p class="text-muted">To lead the future of MEP engineering by delivering innovative,
+                            sustainable and high-performance solutions for complex
+                            infrastructure worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 mt-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <h2 class="section-title">Our Work Methodology</h2>
+                    <p class="mb-5">Our structured methodology ensures every project is delivered with precision,
+                        compliance and operational efficiency.</p>
+
+                    <div class="process-step">
+                        <div class="step-num">01</div>
+                        <div>
+                            <h5>Consultation & Planning</h5>
+                            <p class="small text-muted">We begin by understanding project requirements, design
+                                objectives and site constraints to establish a clear, feasible
+                                and optimized engineering roadmap.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num">02</div>
+                        <div>
+                            <h5>Advanced Drafting (CAD/BIM)</h5>
+                            <p class="small text-muted">Using advanced CAD and BIM tools, we develop coordinated 2D and
+                                3D models that ensure accuracy, clash-free design and
+                                seamless system integration.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num">03</div>
+                        <div>
+                            <h5>Quality & Code Compliance</h5>
+                            <p class="small text-muted">All designs are rigorously reviewed in accordance with
+                                international and national standards to ensure safety, efficiency
+                                and regulatory compliance.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num">04</div>
+                        <div>
+                            <h5>Deliverables & Project Support</h5>
+                            <p class="small text-muted">We provide complete construction-ready documentation along with
+                                technical coordination and implementation support
+                                throughout the project lifecycle.
+                            </p>
+                        </div>
+                    </div>
+                    <p>From concept to completion, our methodology is driven by precision, accountability and
+                        engineering excellence.</p>
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <img src="../images/img_6.jpeg" class="img-fluid rounded-4" alt="Workflow Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background: var(--primary); color: white;">
+        <div class="container text-center py-5">
+            <h2 class="display-5 mb-4">Let's Build Something Great Together</h2>
+            <p class="lead mb-5">Transform your vision into intelligent, efficient and future-ready engineering
+                solutions with our expert MEP
+                consultancy.</p>
+            <a href="contact.html" class="btn btn-premium">CONTACT OUR EXPERTS</a>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <img src="../images/logoMEP.jpeg" alt="Logo" height="50" class="mb-4 bg-white p-2 rounded">
+                    <p class="small text-light-50">Precision in Design, Excellence in Delivery. MEP Groups Consultant
+                        delivers world-class engineering solutions.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt me-2 text-accent"></i> Mumbai, India</p>
+                    <p class="small mb-1"><i class="fas fa-phone-alt me-2 text-accent"></i> +91 91370 54148</p>
+                    <p class="small"><i class="fas fa-envelope me-2 text-accent"></i> mepgroupsconsultant@gmail.com</p>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <p class="text-center small mb-0">&copy; 2024 MEP Groups Consultant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+    <a href="https://wa.me/919137054148" class="whatsapp-float animate__animated animate__bounceInUp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button id="backToTop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+    <style>
+        /* WhatsApp Floating Style */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #25d366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+            background: #128c7e;
+        }
+
+        /* Back to Top Style */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background: var(--accent);
+            color: white;
+            cursor: pointer;
+            width: 45px;
+            height: 45px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        #backToTop:hover {
+            background: var(--primary);
+        }
+    </style>
+
+    <script>
+        // Back to top logic
+        let mybutton = document.getElementById("backToTop");
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        mybutton.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+
+</html>

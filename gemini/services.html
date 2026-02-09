@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | MEP Groups Consultant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        :root {
+            --primary: #002d5b;
+            --secondary: #001a35;
+            --accent: #c5a059;
+            --white: #ffffff;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #444;
+            background-color: #f8f9fa;
+        }
+
+        h1,
+        h2,
+        h3,
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Navigation */
+        .navbar {
+            padding: 15px 0;
+            background: white;
+            border-bottom: 2px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .nav-link {
+            color: var(--primary) !important;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Page Header */
+        .services-header {
+            padding: 100px 0;
+            background: linear-gradient(rgba(0, 26, 53, 0.9), rgba(0, 26, 53, 0.9)), url('../images/img_1.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Service Section Styling */
+        .service-box {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+            margin-bottom: 50px;
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon-large {
+            font-size: 4rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+
+        /* Call to Action */
+        .cta-bar {
+            background: var(--accent);
+            color: white;
+            padding: 40px 0;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+
+        /* Floating Elements */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            z-index: 100;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="../images/logoMEP.jpeg" alt="Logo" height="60"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link mx-2" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2 fw-bold text-accent"
+                            style="color:var(--accent)!important" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="services-header">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Engineering Solutions</h1>
+            <p class="lead">Comprehensive MEP Design & Drafting Services</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container py-5">
+
+            <div class="row align-items-center service-box g-0" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <img src="../images/img_10.jpeg" class="img-fluid w-100" alt="Mechanical HVAC"
+                        style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 p-5">
+                    <i class="fas fa-snowflake service-icon-large"></i>
+                    <h2 class="mb-3">Mechanical (HVAC)</h2>
+                    <p>Hamari HVAC solutions heating aur cooling systems ko optimize karti hain taaki energy consumption
+                        kam ho aur comfort barqarar rahe.</p>
+                    <ul class="feature-list">
+                        <li>Heat Load Calculations</li>
+                        <li>Duct Layout & Sizing</li>
+                        <li>Chilled Water Pipe Sizing</li>
+                        <li>Ventilation & Exhaust Systems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center service-box g-0 flex-lg-row-reverse" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <img src="../images/img_12.jpeg" class="img-fluid w-100" alt="Electrical Systems"
+                        style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 p-5">
+                    <i class="fas fa-bolt service-icon-large"></i>
+                    <h2 class="mb-3">Electrical Systems</h2>
+                    <p>Safe aur efficient power distribution hamari priority hai. Hum code-compliant electrical designs
+                        provide karte hain.</p>
+                    <ul class="feature-list">
+                        <li>Lighting & Power Layouts</li>
+                        <li>Single Line Diagrams (SLD)</li>
+                        <li>Cable Sizing & Schedule</li>
+                        <li>Earthing & Lightning Protection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center service-box g-0" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <img src="../images/img_11.jpeg" class="img-fluid w-100" alt="Plumbing Fire"
+                        style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 p-5">
+                    <i class="fas fa-faucet-drip service-icon-large"></i>
+                    <h2 class="mb-3">Plumbing & Fire Protection</h2>
+                    <p>Water management aur life safety systems mein hum advanced drainage aur fire fighting solutions
+                        design karte hain.</p>
+                    <ul class="feature-list">
+                        <li>Water Supply & Drainage Layouts</li>
+                        <li>Septic Tank & STP Design</li>
+                        <li>Fire Sprinkler & Hydrant Systems</li>
+                        <li>Fire Alarm & Detection Systems</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 bg-secondary text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6">What You Receive (Deliverables)</h2>
+                <p class="text-accent" style="color: var(--accent);">Complete Documentation for Seamless Construction
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3 text-center" data-aos="zoom-in">
+                    <div class="p-4 border border-light rounded">
+                        <i class="fas fa-file-pdf mb-3" style="font-size: 2rem;"></i>
+                        <h6>Detailed Blueprints</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="p-4 border border-light rounded">
+                        <i class="fas fa-cubes mb-3" style="font-size: 2rem;"></i>
+                        <h6>BIM Coordinated Models</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="p-4 border border-light rounded">
+                        <i class="fas fa-calculator mb-3" style="font-size: 2rem;"></i>
+                        <h6>Material Take-offs (BOQ)</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="p-4 border border-light rounded">
+                        <i class="fas fa-clipboard-check mb-3" style="font-size: 2rem;"></i>
+                        <h6>Compliance Reports</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <img src="../images/logoMEP.jpeg" alt="Logo" height="50" class="mb-4 bg-white p-2 rounded">
+                    <p class="small text-light-50">Precision in Design, Excellence in Delivery. MEP Groups Consultant
+                        delivers world-class engineering solutions.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt me-2 text-accent"></i> Mumbai, India</p>
+                    <p class="small mb-1"><i class="fas fa-phone-alt me-2 text-accent"></i> +91 91370 54148</p>
+                    <p class="small"><i class="fas fa-envelope me-2 text-accent"></i> mepgroupsconsultant@gmail.com</p>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <p class="text-center small mb-0">&copy; 2024 MEP Groups Consultant. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <style>
+        /* Footer Styling */
+        .footer-section {
+            background: var(--secondary);
+            color: #fff;
+            padding: 100px 0 30px;
+            margin-top: 100px;
+        }
+
+        .footer-title {
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 40px;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 10px;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid var(--accent);
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            transform: rotate(360deg);
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #25d366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        /* Back to Top */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background: var(--accent);
+            color: white;
+            cursor: pointer;
+            width: 45px;
+            height: 45px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        #backToTop:hover {
+            background: var(--primary);
+        }
+
+        .text-light-50 {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .text-accent {
+            color: var(--accent);
+        }
+    </style>
+
+    <a href="https://wa.me/919137054148" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+
+</html>

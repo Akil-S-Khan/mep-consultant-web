@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MEP Groups Consultant</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0b2c3d;
+            --accent: #2bb673;
+            --light: #f7f9fc;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 110px 0;
+        }
+
+        .bg-light {
+            background: var(--light) !important;
+        }
+
+        /* ================= NAVBAR ================= */
+        .navbar {
+            background: rgba(11, 44, 61, .95);
+            padding: 18px 0;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+        }
+
+        .nav-link {
+            margin-left: 20px;
+            padding: 8px 14px;
+            border-radius: 30px;
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, .15);
+        }
+
+        /* ================= HERO ================= */
+        .page-hero {
+            min-height: 65vh;
+            background:
+                linear-gradient(120deg, rgba(11, 44, 61, .95), rgba(11, 44, 61, .75)),
+                url("../images/img_2.jpeg") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .page-hero h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+        }
+
+        /* ================= CONTENT ================= */
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 50px 45px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, .08);
+        }
+
+        /* ================= STATS ================= */
+        .stat-box {
+            background: #fff;
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            border: 1px solid #eef2f6;
+        }
+
+        .stat-box h3 {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* ================= VALUES ================= */
+        .value-box {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 16px;
+            border: 1px solid #eef2f6;
+            height: 100%;
+        }
+
+        .value-box i {
+            font-size: 40px;
+            color: var(--accent);
+        }
+
+        /* ================= STANDARDS ================= */
+        .standard-badge {
+            padding: 14px 26px;
+            border: 1px solid #e2e8f0;
+            border-radius: 50px;
+            background: #fff;
+            font-weight: 600;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background: linear-gradient(120deg, #071f2b, #0b2c3d);
+            color: #cfd8dc;
+        }
+
+        .footer-top {
+            padding: 70px 0;
+        }
+
+        footer h5 {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        footer a {
+            color: #cfd8dc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        footer a:hover {
+            color: var(--accent);
+            padding-left: 6px;
+        }
+
+        .footer-bottom {
+            background: #061822;
+            padding: 16px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* ================= WHATSAPP ================= */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 58px;
+            height: 58px;
+            background: #25d366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 15px 35px rgba(37, 211, 102, .45);
+            z-index: 999;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-5px) scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MEP GROUPS</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">About MEP Groups Consultant</h1>
+            <p class="mt-3" data-aos="fade-up" data-aos-delay="100">
+                Engineering excellence built on precision, experience and trust.
+            </p>
+        </div>
+    </section>
+
+    <!-- WHO WE ARE -->
+    <section>
+        <div class="container">
+            <div class="content-card" data-aos="fade-up">
+                <h3>Who We Are</h3>
+                <p>
+                    <strong>MEP Groups Consultant</strong> is a professional Mechanical, Electrical and Plumbing (MEP)
+                    engineering consultancy delivering safe, efficient and code-compliant solutions for residential,
+                    commercial, industrial and institutional projects.
+                </p>
+                <p>
+                    We integrate advanced CAD & BIM technologies with hands-on engineering expertise to ensure
+                    coordinated, clash-free and future-ready designs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up">
+                    <div class="stat-box">
+                        <h3>1000+</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-box">
+                        <h3>Residential</h3>
+                        <p>Commercial & Industrial</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-box">
+                        <h3>India</h3>
+                        <p>& International</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-box">
+                        <h3>100%</h3>
+                        <p>Repeat Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section>
+        <div class="container">
+            <div class="content-card" data-aos="fade-up">
+                <h3>What We Do</h3>
+                <p>
+                    Our services cover HVAC systems, electrical power & lighting design, plumbing and drainage,
+                    fire protection, BIM coordination and energy-efficient system optimization.
+                </p>
+                <p>
+                    Each project is engineered with a focus on safety, compliance, constructability and lifecycle
+                    cost efficiency.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="value-box">
+                        <h4>Our Mission</h4>
+                        <p>
+                            To deliver technically sound MEP systems that enhance comfort, safety and energy efficiency
+                            while supporting sustainable development.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-box">
+                        <h4>Our Vision</h4>
+                        <p>
+                            To be a trusted MEP consultancy recognized for engineering excellence, innovation and
+                            long-term client partnerships.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STANDARDS -->
+    <section>
+        <div class="container text-center">
+            <h3 class="mb-4" data-aos="fade-up">Codes & Standards We Follow</h3>
+            <div class="d-flex flex-wrap justify-content-center gap-3" data-aos="fade-up">
+                <span class="standard-badge">IS</span>
+                <span class="standard-badge">NBC</span>
+                <span class="standard-badge">ASHRAE</span>
+                <span class="standard-badge">NFPA</span>
+                <span class="standard-badge">IEC</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h5>MEP Groups Consultant</h5>
+                        <p>Precision-driven MEP engineering solutions delivering efficiency and sustainability.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <a href="#">Home</a><a href="#">About</a><a href="#">Services</a><a href="#">Projects</a><a
+                            href="#">Contact</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Our Services</h5>
+                        <a href="#">HVAC Systems</a><a href="#">Electrical Design</a><a href="#">Plumbing & Fire</a><a
+                            href="#">BIM & Coordination</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 MEP Groups Consultant | Engineering Excellence
+        </div>
+    </footer>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919999999999" target="_blank" class="whatsapp-float">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ duration: 900, once: true });</script>
+
+</body>
+
+</html>
